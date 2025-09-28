@@ -4,7 +4,7 @@ const Hero = () => {
 
             <div className="inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full">
                 <img className="w-20" src="/group-profile.png" alt="icon" />
-                <p className="text-xs font-medium">Trusted by 10k+ people</p>
+                <p className="text-xs font-medium">Trusted by 100k+ people</p>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl">Turning imagination into <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent">digital</span> impact.</h1>
