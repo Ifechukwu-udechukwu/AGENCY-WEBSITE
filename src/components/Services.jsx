@@ -1,3 +1,4 @@
+import ServiceCard from "./ServiceCard"
 import Title from "./Title"
 
 const Services = () => {
@@ -6,25 +7,25 @@ const Services = () => {
         {
             title: "Advertising",
             description: "We turn bold ideas into powerful digital solutions that connect, engage...",
-            icon: ""
+            icon: "/m.png"
 
         },
          {
             title: "Content marketing",
             description: "We help you execute your plan and deliver results.",
-            icon: ""
+            icon: "/c.png"
 
         },
         {
             title: "Content writing",
             description: "We help you create a marketing strategy that drives results.",
-            icon: ""
+            icon: "/cw.png"
 
         },
         {
             title: "Social media",
             description: "We help you build a strong social media presence and engage with your audience",
-            icon: ""
+            icon: "/media.png"
 
         },
     ]
@@ -34,6 +35,14 @@ const Services = () => {
             <img src="/" alt="image" className="absolute -top-110 -left-70 -z-1 dark:hidden"/>
 
             <Title title="How can we help?" desc="From strategy to execution, we craft digital solutions that move your business forward."/>
+
+            <div className="flex flex-col md:grid grid-cols-2">
+                {servicesData.map((service, index)=>(
+                    <ServiceCard key={index} service={service} index={index}/>
+                ))}
+            </div>
+
+
         </div>
     )
 }
