@@ -1,12 +1,28 @@
-# React + Vite
+# 🌐 Agency Landing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **landing page website** built for **companies and agencies** to showcase their services, past work, and team members.  
+Visitors can explore what the agency offers, view team profiles, and easily send messages through a contact form.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Hero Section** – Eye-catching introduction to the agency.
+- **Services Showcase** – Display core services with clear descriptions.
+- **Portfolio / Works** – Highlight previous projects or case studies.
+- **Team Members** – Present each team member with profile photos and roles.
+- **Contact Form** – Visitors can register their details and send messages directly.
+- **Responsive Design** – Fully optimized for mobile, tablet, and desktop.
+- **Dark/Light Theme Ready** (Theme toggling).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:**  
+  - [React](https://react.dev/) (built with [Vite](https://vitejs.dev/))  
+  - [Tailwind CSS](https://tailwindcss.com/) for styling
+- **Deployment:** (Github pages )
+
+---
+
