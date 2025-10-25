@@ -4,12 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
 
-*{
-   font-family: "Outfit", sans-serif;
-   font-weight: 500;
-   cursor: none;
+* {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  cursor: none;
+  box-sizing: border-box;
 
 }
+
+
+body {
+  overflow-x: hidden;
+}
+
 
 /* Restore default cursor on mobile devices */
 @media (max-width: 640px) {
@@ -19,5 +26,5 @@
 }
 
 @theme {
-    --color-primary: #5044E5;
+  --color-primary: #5044E5;
 }
