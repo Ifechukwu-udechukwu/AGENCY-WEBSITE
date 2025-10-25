@@ -40,7 +40,7 @@ const OurWork = () => {
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
                             key={index} className="hover:scale-102 duration-500 transition-all cursor-pointer">
-                            <img src={work.image} alt="image" className="w-full h-48 sm:h-56 md:h-60 rounded-xl object-cover" />
+                            <img src={work.image} alt="image" className="w-full h-48 sm:h-56 md:h-60 rounded-xl object-cover max-w-full" />
                             <h3 className="mt-3 mb-2 text-base sm:text-lg font-semibold">{work.title}</h3>
                             <p className="text-xs sm:text-sm opacity-60 w-full sm:w-5/6">{work.description}</p>
                         </motion.div>

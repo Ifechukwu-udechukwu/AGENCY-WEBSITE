@@ -21,7 +21,7 @@ const TrustedBy = () => {
         whileInView="visible"
         transition={{ staggerChildren: 0.1 }}
         viewport={{ once: true }}
-        className="flex items-center justify-center flex-wrap gap-6 sm:gap-8 md:gap-10 m-2 sm:m-4">
+        className="flex items-center justify-center flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10 m-2 sm:m-4 max-w-full overflow-hidden">
         <motion.img variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 }, }} transition={{ duration: 0.4 }} src="/Starburst.png" alt="logo" className="max-h-6 sm:max-h-8 md:max-h-9 dark:drop-shadow-xl" />
         <motion.img variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 }, }} transition={{ duration: 0.4 }} src="/mercedes.png" alt="logo" className="max-h-6 sm:max-h-8 md:max-h-9 dark:drop-shadow-xl" />
         <motion.img variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 }, }} transition={{ duration: 0.4 }} src="/Ferrari.jpg" alt="logo" className="max-h-6 sm:max-h-8 md:max-h-9 dark:drop-shadow-xl" />

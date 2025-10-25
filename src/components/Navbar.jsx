@@ -16,7 +16,7 @@ const Navbar = ({theme, setTheme}) => {
 
             <img src={theme === "dark" ? "/company.png" : "enterprise.png"} alt="company logo" className="w-8 sm:w-10 md:w-12 lg:w-15" />
 
-            <div className={`text-gray-700 dark:text-white text-sm sm:text-sm ${!sidebarOpen ? "max-sm:w-0 overflow-hidden" : "max-sm:w-64 max-sm:pl-10"} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-4 sm:gap-5 transition-all`}>
+            <div className={`text-gray-700 dark:text-white text-sm sm:text-sm ${!sidebarOpen ? "max-sm:w-0 overflow-hidden" : "max-sm:w-60 max-sm:pl-8"} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20 flex sm:items-center gap-4 sm:gap-5 transition-all`}>
 
                 <img src="/close.png" alt="icon" className="w-5 absolute right-4 top-4 sm:hidden" onClick={()=>setSidebarOpen(false)}/>
 
