@@ -28,10 +28,10 @@ const OurWork = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ staggerChildren: 0.2 }}
-            id="our-work" className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
+            id="our-work" className="flex flex-col items-center gap-6 sm:gap-7 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 pt-20 sm:pt-24 md:pt-30 text-gray-700 dark:text-white">
             <Title title="Our latest work" desc="From strategy to execution, we craft digital solutions that move your business forward." />
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-5xl">
                 {
                     workData.map((work, index) => (
                         <motion.div
@@ -40,9 +40,9 @@ const OurWork = () => {
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
                             key={index} className="hover:scale-102 duration-500 transition-all cursor-pointer">
-                            <img src={work.image} alt="image" className="w-300 h-60 rounded-xl" />
-                            <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
-                            <p className="text-sm opacity-60 w-5/6">{work.description}</p>
+                            <img src={work.image} alt="image" className="w-full h-48 sm:h-56 md:h-60 rounded-xl object-cover" />
+                            <h3 className="mt-3 mb-2 text-base sm:text-lg font-semibold">{work.title}</h3>
+                            <p className="text-xs sm:text-sm opacity-60 w-full sm:w-5/6">{work.description}</p>
                         </motion.div>
                     ))
                 }

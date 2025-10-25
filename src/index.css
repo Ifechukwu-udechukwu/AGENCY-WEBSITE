@@ -11,6 +11,13 @@
 
 }
 
+/* Restore default cursor on mobile devices */
+@media (max-width: 640px) {
+  * {
+    cursor: auto;
+  }
+}
+
 @theme {
     --color-primary: #5044E5;
 }

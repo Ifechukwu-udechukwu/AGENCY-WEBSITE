@@ -20,21 +20,21 @@ const Teams = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-800 dark:text-white">
+      className="flex flex-col items-center gap-6 sm:gap-7 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 pt-20 sm:pt-24 md:pt-30 text-gray-800 dark:text-white">
       <Title title="Meet the team" desc="A passionate team of digital experts dedicated to your brands success." />
 
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-4 sm:gap-5 w-full max-w-6xl">
         {teamData.map((team, index) => (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
             viewport={{ once: true }}
-            key={index} className="flex max-sm:flex-col items-center gap-5 px-4 rounded-xl border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 hover:scale-103 transition-all duration-400">
-            <img src={team.image} alt="image" className="w-12 h-12 rounded-full" />
+            key={index} className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-5 px-3 sm:px-4 py-3 sm:py-4 rounded-xl border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-xl shadow-gray-100 dark:shadow-white/5 hover:scale-103 transition-all duration-400">
+            <img src={team.image} alt="image" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex-shrink-0" />
 
-            <div className="flex-1">
-              <h3 className="font-bold text-sm">{team.name}</h3>
+            <div className="flex-1 text-center sm:text-left">
+              <h3 className="font-bold text-xs sm:text-sm">{team.name}</h3>
               <p className="text-xs opacity-60">{team.title}</p>
             </div>
 

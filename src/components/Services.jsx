@@ -38,12 +38,12 @@ const Services = () => {
         whileInView="visible"
         viewport={{once: true}}
         transition={{staggerChildren: 0.2}}
-         id="services" className="relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
+         id="services" className="relative flex flex-col items-center gap-6 sm:gap-7 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 pt-20 sm:pt-24 md:pt-30 text-gray-700 dark:text-white">
             <img src="/" alt="image" className="absolute -top-110 -left-70 -z-1 dark:hidden"/>
 
             <Title title="How can we help?" desc="From strategy to execution, we craft digital solutions that move your business forward."/>
 
-            <div className="flex flex-col md:grid grid-cols-2">
+            <div className="flex flex-col md:grid grid-cols-2 gap-4 sm:gap-6 w-full max-w-6xl">
                 {servicesData.map((service, index)=>(
                     <ServiceCard key={index} service={service} index={index}/>
                 ))}
